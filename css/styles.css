@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.contenedor{
+    background-color: saddlebrown;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.seccion1{
+    position: relative;
+    background-color: aquamarine;
+    height: 400px;
+    width: 100%;
+    
+    & .saludo{
+        height: 100px;
+        width: 200px;
+        background-color: aliceblue;
+        position: absolute;
+        bottom: 30px;
+        left: 5%;
+    }
+
+    & .volador{
+        display: flex;
+        position: absolute;
+        background-color: aqua;
+        height: 50px;
+        width: 90%;
+        bottom: -25px;
+        left: 5%;
+
+    }
+}
+
+
+main{
+    height: 30% auto;
+    width: 100%;
+    background-color: turquoise;
+    padding: 10px;
+    
+
+    .resultados{
+        background-color: tomato;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        article.resto{
+            height: 100px;
+            width: 100%;
+            color: white;
+            font-size: 30pt;
+            background-color: wheat;
+            position: relative;
+
+            .img-resto{
+                background-color: violet;
+                height: 100%;
+                width: 50%;
+                position: absolute;
+                left: 0;
+            }
+            .datos-resto{
+                background-color: tomato;
+                height: 100%;
+                width: 60%;
+                position: absolute;
+                right: 0;
+                border-bottom-left-radius: 20px;
+                box-shadow: 0 0 10px -2px black;
+            }
+            .puntu-resto{
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                background-color: steelblue;
+                font-size: 22px;
+                display: grid;
+                place-items: center;
+                right: -10px;
+                top: -10px;
+                border-radius: 10px 0;
+            }
+        }
+    }
+}
+
+
+
+.a1{
+    display: grid;
+    place-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: violet;
+}
+
+.buscador{
+    height: 100%;
+    width: 85%;
+    background-color: tomato;
+}
+
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 8%;
+    background-color: teal;
+}
+
+.volador input[type=search]{
+    background-color: red;
+    height: 100%;
+    width: calc(100% - 120px) ;
+}
+
+.volador input[type=submit]{
+    background-color: red;
+    height: 100%;
+    width: 50px ;
+}
+
+/* .imagenes_resto{
+
+}
+
+.datos_resto{} */
+
+
+@media (orientation: landscape){
+
+    main{
+        .resultados{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            article.resto{
+                flex: 0 0 calc(50% -10px);
+                background-color: springgreen;
+            }
+        }
+    }
+}
