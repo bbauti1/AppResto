@@ -4,12 +4,63 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+}
+
 .contenedor{
     background-color: saddlebrown;
     padding: 30px;
     height: 100%;
     width: 100%;
     flex-direction: column;
+}
+
+.pa{
+    position: absolute;
+}
+
+.pr{
+    position: relative;
+}
+
+.centgrid{
+    display: grid;
+    place-items: center;
+}
+
+.centflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex100{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sombra{
+    box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.5);
+}
+
+.img_fit{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.volver{
+    font-size: 30px;
+    left: 15px;
+    top: 15px;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    color: black;
 }
 
 .seccion1{
@@ -53,14 +104,15 @@ main{
         flex-direction: column;
         gap: 20px;
 
-        article.resto{
+            .resto{
             height: 100px;
             width: 100%;
             color: white;
             font-size: 30pt;
             background-color: wheat;
             position: relative;
-
+            
+        
             .img-resto{
                 background-color: violet;
                 height: 100%;
@@ -137,6 +189,63 @@ main{
 .datos_resto{} */
 
 
+
+.resto_image{
+    height: 40%;
+    width: 100%;
+    background-color: yellow;
+    
+    
+    .resto_precio{
+        height: 40px;
+        width: auto;
+        background-color: turquoise;
+        right: 15px;
+        bottom: -15px;
+        border-radius: 8px 0;
+        padding: 8px;
+        font-weight: bold;
+        color: white;
+    }
+}
+.resto_desc{
+    height: auto;
+    min-height: 60%;
+    width: 100%;
+    /* background-color: gray; */
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.resto_menu{
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: white; /* temporario*/
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.btn_menu{
+    /* background-color: violet; */
+    flex: 1;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+.btn_menu.active{
+    border-top: solid 4px aquamarine;
+}
+
+
+
 @media (orientation: landscape){
 
     main{
@@ -144,7 +253,7 @@ main{
             flex-direction: row;
             flex-wrap: wrap;
 
-            article.resto{
+            .resto{
                 flex: 0 0 calc(50% -10px);
                 background-color: springgreen;
             }
