@@ -63,6 +63,10 @@ body{
     color: black;
 }
 
+.pd25{
+    padding: 25px;
+}
+
 
 .seccion1{
     position: relative;
@@ -259,13 +263,14 @@ main{
     padding-bottom: 75px;
 
     .tarjeta{
+        display: flex;
         height: 150px;
-        background-color: rgb(107, 64, 224);
+        background-color: rgba(107, 64, 224, 0.527);
     }
 
     .foto{
         height: 150px;
-        width: 150px;
+        flex: 0 0 150px;
     }
 
     .tag{
