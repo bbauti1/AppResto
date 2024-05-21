@@ -51,6 +51,8 @@ body{
     object-fit: cover;
 }
 
+
+
 .volver{
     font-size: 30px;
     left: 15px;
@@ -77,16 +79,15 @@ body{
     & .saludo{
         height: 100px;
         width: 200px;
-        background-color: aliceblue;
         position: absolute;
         bottom: 30px;
         left: 5%;
+        color: rgb(66, 36, 19);
     }
 
     & .volador{
         display: flex;
         position: absolute;
-        background-color: aqua;
         height: 50px;
         width: 90%;
         bottom: -25px;
@@ -99,7 +100,6 @@ body{
 main{
     height: 30% auto;
     width: 100%;
-    background-color: turquoise;
     padding: 10px;
     
 
@@ -155,9 +155,9 @@ main{
 .a1{
     display: grid;
     place-items: center;
+    background-color: aquamarine;
     height: 50px;
     width: 50px;
-    background-color: violet;
 }
 
 .buscador{
@@ -176,13 +176,11 @@ main{
 }
 
 .volador input[type=search]{
-    background-color: red;
     height: 100%;
     width: calc(100% - 120px) ;
 }
 
 .volador input[type=submit]{
-    background-color: red;
     height: 100%;
     width: 50px ;
 }
