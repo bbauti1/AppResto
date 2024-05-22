@@ -3,6 +3,7 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -10,7 +11,6 @@ body{
 }
 
 .contenedor{
-    background-color: saddlebrown;
     padding: 30px;
     height: 100%;
     width: 100%;
@@ -52,7 +52,6 @@ body{
 }
 
 
-
 .volver{
     font-size: 30px;
     left: 15px;
@@ -66,7 +65,7 @@ body{
 }
 
 .pd25{
-    padding: 25px;
+    padding: 20px;
 }
 
 
@@ -78,11 +77,11 @@ body{
     
     & .saludo{
         height: 100px;
-        width: 200px;
+        width: 300px;
         position: absolute;
         bottom: 30px;
         left: 5%;
-        color: rgb(66, 36, 19);
+        color: white;
     }
 
     & .volador{
@@ -104,41 +103,53 @@ main{
     
 
     .resultados{
-        background-color: tomato;
         display: flex;
         flex-direction: column;
         gap: 20px;
-
-            .resto{
+  
+        article.resto{
             height: 100px;
             width: 100%;
-            color: white;
+            color: black;
             font-size: 30pt;
-            background-color: wheat;
+            background-color: azure;
             position: relative;
-            
-        
+
             .img-resto{
-                background-color: violet;
+                background-color: bisque;
                 height: 100%;
                 width: 50%;
                 position: absolute;
                 left: 0;
             }
             .datos-resto{
-                background-color: tomato;
+                background-color: white;
                 height: 100%;
                 width: 60%;
+                font-size: 16px;
                 position: absolute;
                 right: 0;
                 border-bottom-left-radius: 20px;
                 box-shadow: 0 0 10px -2px black;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .datos-icons{
+                bottom: -13%;
+                height: 30%;
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                color: aqua;
             }
             .puntu-resto{
                 position: absolute;
                 height: 40px;
                 width: 40px;
-                background-color: steelblue;
+                background-color: aqua;
                 font-size: 22px;
                 display: grid;
                 place-items: center;
@@ -164,6 +175,30 @@ main{
     height: 100%;
     width: 85%;
     background-color: tomato;
+}
+
+.categorias{
+    height: 30%;
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 90px;
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    
+
+    .item_cat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 80px;
+    }
 }
 
 .buscar{
@@ -284,7 +319,9 @@ main{
     }
 
     .plato_desc{
-        
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
