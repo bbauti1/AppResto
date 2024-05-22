@@ -51,6 +51,13 @@ body{
     object-fit: cover;
 }
 
+.img_fit2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 
 .volver{
     font-size: 30px;
@@ -135,7 +142,7 @@ main{
                 text-overflow: ellipsis;
             }
             .datos-icons{
-                bottom: -13%;
+                bottom: -2%;
                 height: 30%;
                 width: 100%;
                 padding: 10px;
@@ -298,7 +305,7 @@ main{
     .tarjeta{
         display: flex;
         height: 150px;
-        background-color: rgba(107, 64, 224, 0.527);
+        
     }
 
     .foto{
@@ -316,12 +323,15 @@ main{
         padding: 8px;
         font-weight: bold;
         color: white;
+        display: flex;
+        flex-direction: row;
     }
 
     .plato_desc{
         height: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
+        color: black;
     }
 }
 
