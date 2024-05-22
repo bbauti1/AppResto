@@ -335,6 +335,36 @@ main{
     }
 }
 
+.seccion-image{
+    position: relative;
+    background-color: aquamarine;
+    height: 400px;
+    width: 100%;
+
+    .price-plato{
+        height: 15%;
+        width: auto;
+        background-color: turquoise;
+        bottom: 8%;
+        right: 12%;
+        border-radius: 8px 0;
+        padding: 8px;
+        font-weight: bold;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+    }
+    .titulo-plato{
+        height: 30%;
+        width: 70%;
+        position: absolute;
+        bottom: -10px;
+        left: 5%;
+        color: white;
+       
+    }
+}
+
 
 
 @media (orientation: landscape){
