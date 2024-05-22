@@ -363,8 +363,21 @@ main{
         color: white;
        
     }
+
 }
 
+.platito{
+    padding: 70px;
+    padding-top: 60px;
+    height: 50%;
+    width: 100%;
+    background-color: steelblue;
+}
+.button-carrito{
+    background-color: springgreen;
+    height: 5%;
+    width: 100%;
+}
 
 
 @media (orientation: landscape){
